@@ -109,6 +109,13 @@ body {
     color: #000;
     transform: scale(1.2);
 }
+.titulo-kk{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 28;
+    background-color: #1d3557;
+}
 
 /*---------------------------PARTE DE LAS CARTAS-----------------------------*/
 .card {
@@ -132,6 +139,7 @@ body {
     display: block;
     margin: 0 auto;
 }
+
 .card-footer{
     text-align: center;
     display: block;
@@ -148,11 +156,11 @@ body {
 
 }
 .btn_1 a{
-    color: #000;
+    color: #ffff;
     text-decoration: none;
 }
 .btn_1 :hover{
-    background-color: #fff;
+    background-color: #1d3557;
     color: #000;
     transform: scale(1.2);
 }
@@ -163,11 +171,11 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
     justify-content: center;
-  }
-  
-  .card {
+}
+
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
+}
   
   /* Media queries para dispositivos más pequeños */
   
@@ -175,12 +183,24 @@ body {
     .section {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .section {
       grid-template-columns: repeat(1, 1fr);
     }
-  }
-  
+}
+
+.pie_pagina{
+    background-color: #1d3557;
+    padding: 30px 600px;
+    margin-top: 0;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
 

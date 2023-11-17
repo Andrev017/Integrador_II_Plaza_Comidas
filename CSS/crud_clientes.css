@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: white;/*219ebc*/
+    font-size: 24px;
+    text-align: center;
+}
+.tabala_crud {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+th {
+    background-color: #1d3557;
+    font-weight: bold;
+    color: #ffff;
+}  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*--------------------------------VENTANA MODAL--------------------------------------------*/
+.modal_crud {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido-crud {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+}
+h3{
+    color: #1d3557;
+    font-size: 18px;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn_eli_crud{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #1d3557;
+    color: white;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+}
+.btn_eli_act{
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background: #1d3557;
+    color: white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+}
+.btn_eli{
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background-color: rgb(255, 65, 65);
+    color: white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+}
+/*------------------------------------------------------------------------------*/
+.modal-contenido-actu{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 60%;
+    justify-content: center;
+    text-align: center;
+}
+
+.text {
+    margin-top: 30px;
+}
+.form-control {
+    margin: 20px 0 40px;
+    width: 390px;
+
+}
+.form-control input {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #1d3557 solid;
+    display: block;
+    width: 90%;
+    padding: 10px;
+    color: #1d3557;
+}
+
+.form-control input:focus .form-control input:valid {
+    outline: 0;
+    border-bottom-color: #219ebc;
+}
+
+.form-control label {
+
+    position: absolute;
+    pointer-events: none;
+
+}
+
+.form-control label span {
+
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0265, 1.55);
+}
+
+.form-control input{
+    font-size: 14px;
+}

@@ -2,6 +2,8 @@
     require "../DataBase/modelo.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $id = $_POST['id_usuario'];
+        
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
         $email = $_POST['email'];
@@ -19,8 +21,10 @@
 
         $conn->close();
     }
+    //SELECT * FROM usuario WHERE contraseña_usuario ='1234567' AND email_usuario ="adre@gmail.com"
 ?>
-SELECT * FROM usuario WHERE contraseña_usuario ='1234567' AND email_usuario ="adre@gmail.com"
+
+
 
 
 

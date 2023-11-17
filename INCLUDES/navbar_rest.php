@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLaza de Comidas</title>
     <link rel="stylesheet" href="../CSS/navbar.css">
+
+    <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
 </head>
 <body>
     
@@ -16,7 +19,7 @@
         
         <div class="logo">
             <div class="bn">
-                <a href="index.php">
+                <a href="../View/index.php">
                     <img src="../img/logo_plaza.png" alt="Logo del Proyecto">
                 </a>
                     
@@ -28,8 +31,8 @@
             <ul class="nav-links">
             
                 <li><a href="../View/restaurantes.php">Restaurantes</a></li>
-                <li><a href="">Sucursales</a></li>
-                <li><a href="">Promociones</a></li>
+                <li><a href="../View/sucursales.php">Sucursales</a></li>
+                <li><a href="../View/promociones.php">Promociones</a></li>
                 <li><a id="btn-modal">Ver compra</a></li>
             </ul>
         </nav>

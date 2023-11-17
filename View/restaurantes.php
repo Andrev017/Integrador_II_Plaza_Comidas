@@ -13,9 +13,12 @@
 </head>
 <body>
     <br><br>
-    <H1>
-        LA PARTE DE RESTAURANTES
-    </H1>
+    <div class="titulo-kk" >
+        <h1  >
+            TODOS NUESTROS RESTAURANTES
+        </h1>
+    </div>
+    
     <br><br>
     <section class="section">
 
@@ -29,7 +32,7 @@
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="../01_ensartados/ensartados.php">Visitar</a>
                 </button>
             </div>
         </div>
@@ -44,22 +47,22 @@
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="">Visitar</a>
                 </button>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h3>Pizza Hot</h3>
+                <h3>Sillpancho de Don PANCHO</h3>
             </div>
             <div class="card-body">
                 <img src="../img/el_gordito_icono.png" alt="">
-                <p>Las mejores pizzas</p>
+                <p>Las mejores Trancapechos</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="../02_sillpancho/sillpancho.php">Visitar</a>
                 </button>
             </div>
         </div>
@@ -111,11 +114,17 @@
 
     </section>
 
+    <br><br><br>
+
+
+        <footer class="pie_pagina" >
+
+        </footer>
 
 
 </body>
 </html>
 
 <?php
-    //require'../INCLUDES/footer.php';
+    
 ?>

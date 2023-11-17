@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="../CSS/navbar.css">
 
+    <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
+
 </head>
 
 <body>

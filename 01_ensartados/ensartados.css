@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: #ffee32;
+    background: #fdca00;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,15 +64,15 @@ body {
 
 .header .nav-links a {
     font-size: 400;
-    /*font-size: 20px;*/
-    color: #e5dde6;
+    color: #003566;
     text-decoration: none;
     font-size: 18px;
 
 }
 
 .header .nav-links li a:hover {
-    color: #fff;
+    color: #00509d
+    ;
     font-size: 18px;
 }
 

@@ -202,15 +202,14 @@
     width: 30%;
     transition-duration: .3s;
     padding-left: 20px;
-  }
+}
   /* hover effect button's text */
-  .Btn:hover .text {
+.Btn:hover .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
     padding-right: 10px;
-  }
-  /* button click effect*/
-  .Btn:active {
+}  /* button click effect*/
+.Btn:active {
     transform: translate(2px ,2px);
-  }
+}
