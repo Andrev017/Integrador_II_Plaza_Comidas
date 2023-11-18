@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: #f77f00;
+    background: #1d3557;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,133 +120,94 @@ body {
     color: #000;
     transform: scale(1.2);
 }
-/*-------------------------------------VENTANA MODAL------------------------------------------*/
-.btn-modal{
-    cursor: pointer;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.cerrar {
-    position: absolute;
-    right: 540px;
-    top: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: black;
-    border: 2px solid #D1D5DB;
-    font-size: 1rem;
-    font-weight: 300;
-    width: 30px;
-    height: 30px;
-    border-radius: 7px;
-    transition: .3s ease;
-    cursor: pointer;
-}
-
-.cerrar:hover {
-    background-color: #ee0d0d;
-    border: 2px solid #ee0d0d;
-    color: #fff;
-}
-/*--------------------------------------cards-----------------------------------------------*/
-.card {
+/*-----------------------------------------------------------------------------------------------*/
+.section{
+    background-color: #1d3557;
+    padding: 50px 60px;
     width: 400px;
     height: 450px;
-    border: 2px solid #1d3557;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #ccc;
-    margin: 10px;
-    padding: 10px;
-
+    color: #fff;
+    margin-left: 4%;
     
-}
-.card-header{
-    font-size: 40;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-
-}
-.card-body{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-
-.card-footer{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-.btn_1{
-    font-weight: 700;
-    padding: 8px 15px;
-    background: #1d3557;
-    border: none;
-    border-radius: 50px;
-    transition: all 0.3s ease 0s;
-    text-align: center;
-
-}
-.btn_1 a{
-    color: #ffff;
-    text-decoration: none;
-}
-.btn_1 :hover{
-    background-color: #1d3557;
-    color: #ccc;
-    transform: scale(1.2);
-}
-/*-----------------------------------------------------------------------------*/
-.section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
+}  
+h1{
+    color: white;
+    font-size: 20px;
     justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #219ebc;
+    color: white;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
+}
+.form-control input {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+/*-----------------------------------------------TABLAAAAA------------------------------------------*/
+.tabala_crud {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 18%;/* Agregado para centrar la tabla horizontalmente */
+    margin-top: -34%;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+
 }
 
-
-
-@media (max-width: 992px) {
-    .section {
-        grid-template-columns: repeat(2, 1fr);
-    }
+th {
+    background-color: #1d3557;
+    font-weight: bold;
+    color: #ffff;
+}  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
-
-@media (max-width: 768px) {
-    .section {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.btn_act{
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background: #219ebc;
+    color: white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
 }
-.img_ens{
-    width: 300px;
-    height: 300px;
+.btn_eli{
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    background-color: rgb(255, 65, 65);
+    color: white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
 }

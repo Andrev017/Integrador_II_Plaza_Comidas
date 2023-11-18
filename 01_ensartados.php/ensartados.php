@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Gordo</title>
-
-    <link rel="stylesheet" href="../03_El_gordito/el_gordo.css">
+    <title>Ensartado</title>
+    <link rel="stylesheet" href="../01_ensartados.php/ensartados.css">
 
     <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
     <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
 </head>
+
+
 <body>
-    <header class="header" >       
+<header class="header" >       
         <div class="logo">
             <div class="bn">
                 <a href="../View/index.php">
@@ -69,18 +70,18 @@
     <div>
         <div class="nom_inicio">
                 <h1>
-                    El Gordo  
+                    Ensartados  
                 </h1>
         </div>
     </div>
 <!--p>----------------------------------------------------------------------------------------------------</!--p-->
-    <section class="section">
+        <section class="section" >
             <div class="card">
                 <div class="card-header">
                     <h1>Corte Argetino</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
+                    <img src="../img/ensartados/menu1d.jpg" alt="" class="img_ens" >
                     <p>55 Bs, con dos porciones a elección</p>
                 </div>
                 <br>
@@ -92,11 +93,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h3>Tira de Lomo</h3>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="../img/ensartados/menu2d.jpg" alt="" class="img_ens" >
+                    <p>45 Bs, con dos porciones a elección</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -107,11 +108,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h3>Bife Chorizo</h3>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="../img/ensartados/menu3d.jpg" alt="" class="img_ens" >
+                    <p>50 Bs, con dos porciones a elección</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -122,11 +123,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h3>Mix Churasco</h3>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="../img/ensartados/menu4.jpg" alt="" class="img_ens" >
+                    <p>90 bs, , con pollo, chorizo, brochetas y sus porciones</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -137,11 +138,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h3>Pacú a la Parrilla</h3>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="../img/ensartados/menu5d.jpg" alt="" class="img_ens" >
+                    <p>25 Bs, solo los dias miercoles.</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -150,7 +151,8 @@
                     </button>
                 </div>
             </div>
-    </section>
+
+        </section>
 
 </body>
 </html>

@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: #f77f00;
+    background: #1d3557;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ body {
 
 /*-------------------------------------------------------------------------------------*/
 .nom_inicio{
-    background-color: #1d3557;
+    background-color: #219ebc;
     color: #fff;
     display: flex;
     align-items: center;

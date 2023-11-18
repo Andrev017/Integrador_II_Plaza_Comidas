@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: #f77f00;
+    background: #ffd60a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,4 +249,34 @@ body {
 .img_ens{
     width: 300px;
     height: 300px;
+}
+
+/*--------------------------------------------------------------------------*/
+#map{
+    background-color: #264653;
+    display: flex;
+    cursor: pointer;
+justify-content: center;
+align-items: center;
+    margin: auto;
+}
+
+.nom_map{
+    background-color: #1d3557;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 50px 20%;
+    
+}
+
+.publicidad{
+    background-color: #1d3557;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 8px 20%;
 }

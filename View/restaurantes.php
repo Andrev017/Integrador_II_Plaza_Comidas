@@ -32,7 +32,7 @@
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../01_ensartados/ensartados.php">Visitar</a>
+                    <a href="../01_ensartados.php/ensartados.php">Visitar</a>
                 </button>
             </div>
         </div>
@@ -47,29 +47,29 @@
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="">Visitar</a>
+                    <a href="../05_pizza_fuego/pizza_fuego.php">Visitar</a>
                 </button>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h3>Sillpancho de Don PANCHO</h3>
+                <h3>El Gordo</h3>
             </div>
             <div class="card-body">
                 <img src="../img/el_gordito_icono.png" alt="">
-                <p>Las mejores Trancapechos</p>
+                <p>Todo tipo de Carnes</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../02_sillpancho/sillpancho.php">Visitar</a>
+                    <a href="../03_El_gordito/el_gordo.php">Visitar</a>
                 </button>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h3>Pizza Hot</h3>
+                <h3>La Pecera</h3>
             </div>
             <div class="card-body">
                 <img src="../img/la_pecerita_icono.png" alt="">
@@ -77,37 +77,37 @@
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="../04_pecerita/pecerita.php">Visitar</a>
                 </button>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h3>Pizza Hot</h3>
+                <h3>Fired Chiken</h3>
             </div>
             <div class="card-body">
                 <img src="../img/pollo_reducido.png" alt="">
-                <p>Las mejores pizzas</p>
+                <p>Pollos crocantes</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="../06_pollo/pollo.php">Visitar</a>
                 </button>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <h3>Pizza Hot</h3>
+                <h3>Sillpancho Don Pancho</h3>
             </div>
             <div class="card-body">
                 <img src="../img/sillpancho_icono.png" alt="">
-                <p>Las mejores pizzas</p>
+                <p>Los mas ricos de Cocha</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">
-                    <a href="../Restaurantes/ensartados.php">Visitar</a>
+                    <a href="../02_sillpancho/sillpancho.php">Visitar</a>
                 </button>
             </div>
         </div>

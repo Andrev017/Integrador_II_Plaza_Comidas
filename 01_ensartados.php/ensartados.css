@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: #f77f00;
+    background: #ffd60a;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,3 +250,4 @@ body {
     width: 300px;
     height: 300px;
 }
+

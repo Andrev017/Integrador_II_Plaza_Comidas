@@ -9,16 +9,27 @@
 }
 
 body {
-    background-color: #e0aaff;
+    background-color: white;
 }
 
 .header {
-    background: #fdca00;
+    background: #1d3557;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     padding: 2px 7%;
+}
+
+/*-------------------------------------------------------------------------------------*/
+.nom_inicio{
+    background-color: #1d3557;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 130px;
+    padding: 50px 20%;
+    font-size: 34px;
 }
 
 /*-----------------LOGO--------------------------*/
@@ -64,15 +75,15 @@ body {
 
 .header .nav-links a {
     font-size: 400;
-    color: #003566;
+    /*font-size: 20px;*/
+    color: white;
     text-decoration: none;
     font-size: 18px;
 
 }
 
 .header .nav-links li a:hover {
-    color: #00509d
-    ;
+    color: white;
     font-size: 18px;
 }
 
@@ -108,4 +119,39 @@ body {
     background-color: #fff;
     color: #000;
     transform: scale(1.2);
+}
+/*----------------------------------------------------------------------------------------------*/
+.imge_1{
+    background-color: #1d35576c;
+    z-index: 5;
+}
+.img_1{
+    
+    height:40em;
+    width:100%;
+    z-index: -5;
+    object-fit: cover;
+
+}
+.texto_content{
+    color: #fff;
+    position: absolute;
+    width: 97%;
+    text-align: left;
+    margin-left: 20px;
+    top: 280px;
+    z-index: 10;
+    background-color: #0005;
+    font-size: 14px;
+}
+
+.texto_content p {
+    padding: 1.5em;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.texto_content h2{
+    font-size: 50px;
 }

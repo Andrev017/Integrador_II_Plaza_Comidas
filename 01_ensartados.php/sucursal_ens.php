@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones</title>
-    <link rel="stylesheet" href="../CSS/promociones.css">
+    <title>Sucursales</title>
+
+    <link rel="stylesheet" href="../01_ensartados.php/sucursales_ens.css">
 
     <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
     <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
 </head>
-
-
 <body>
-
 <header class="header" >       
         <div class="logo">
             <div class="bn">
@@ -67,47 +65,48 @@
     </script>
     </header>
     <!--p>----------------------------------------------------------------------------------------------------</!--p-->
-    <div>
-        <div class="nom_inicio">
-                <h1>
-                    Promociones y Avisos Semanales  
-                </h1>
-        </div>
-    </div>
-<!--p>----------------------------------------------------------------------------------------------------</!--p-->
+    
 
-    <section class="section" >
-            <div class="card">
-                <div class="card-header">
-                    <h1>Almuerzos de fin de Semana</h1>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/promo.jpg" alt="" class="img_ens" >
-                    <p>Almuerzos Bufet todos los findes</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Ubicación</a>
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h1>Comelones</h1>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/promo1.jpg" alt="" class="img_ens" >
-                    <p>Premiamos a los mas comelones de Cocha</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Ubicación</a>
-                    </button>
-                </div>
-            </div>
+<!--p>----------------------------------------------------------------------------------------------------</!--p-->
+<section id="map-container">
+        <br>
+        <br>
+            <h1 class="nom_map">
+                En la plaza Lincon
+            </h1>
+        <br>
+        <br>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.265714938877!2d-66.17320556889213!3d-17.36896069171965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3753a69106273%3A0x1be122e90b748a0c!2sLincoln%20-%20Plaza%20de%20Comidas!5e0!3m2!1ses!2sbo!4v1683313698335!5m2!1ses!2sbo" 
+            width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+
     </section>
+        <section id="map-container">
+        <br>
+        <br>
+            <h1 class="nom_map">
+                Nuestra segunda Sucursal 
+            </h1>
+        <br>
+        <br>
+        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1165.265714938877!2d-66.17320556889213!3d-17.36896069171965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3753a69106273%3A0x1be122e90b748a0c!2sLincoln%20-%20Plaza%20de%20Comidas!5e0!3m2!1ses!2sbo!4v1683313698335!5m2!1ses!2sbo" 
+            width="900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+        <div class="publicidad">
+            <br>
+            <h3>
+                Nuestros números de referencia <br>
+                Gerente: 4578565 <br>
+                Soprote: 67896456 <br>
+                Sucursal Central: 67562658 <br>
+            </h3>
+        </div>
+    </section>
+
+
+
 
 </body>
 </html>
