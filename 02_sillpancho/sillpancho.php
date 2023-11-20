@@ -79,11 +79,11 @@
     <section class="section" >
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Sillpancho </h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://okdiario.com/img/2020/05/05/receta-de-silpancho-boliviano.jpg" alt="" class="img_ens" >
+                    <p>25 Bs, con carne molida</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -94,11 +94,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Sillpancho</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/OIP.fnWWIJYtwcAcUTG1YZuqZQHaF2?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
+                    <p>25 Bs, con filete de carne</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -109,11 +109,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Sillpancho de Pollo</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/OIP.JFQuD13Jstos-ueaFRla0AHaHa?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
+                    <p>20 Bs</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -124,26 +124,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Trancapecho</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <h1>Corte Argetino</h1>
-                </div>
-                <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/R.542e9196d38d60cd231750d0d5d0c416?rik=OtwEiDTGb%2b2Hww&pid=ImgRaw&r=0" alt="" class="img_ens" >
+                    <p>11 Bs</p>
                 </div>
                 <br>
                 <div class="card-footer">

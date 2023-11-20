@@ -77,76 +77,76 @@
     <section class="section">
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Pique Macho</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://i.pinimg.com/originals/12/e5/b5/12e5b58bd517b03c4f38ad1446e23a4d.jpg" alt="" class="img_ens" >
+                    <p>110 Bs, para 4 personas</p>
                 </div>
                 <br>
                 <div class="card-footer">
                     <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
+                        <a href="">Añadir a su compra</a>
                     </button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Charque</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://4.bp.blogspot.com/-RB-D_97fDIQ/Wt6umrRbydI/AAAAAAAAAJc/d-4NyzJ_m0ceJATiD8zOmLoDvr-f7rIjACLcBGAs/s1600/descarga%2B%25284%2529.jpg" alt="" class="img_ens" >
+                    <p>80 Bs </p>
                 </div>
                 <br>
                 <div class="card-footer">
                     <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
+                        <a href="">Añadir a su compra</a>
                     </button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Sopa de mani</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/OIP.cTj1lFeacGurixcYT1kdiwHaE8?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
+                    <p>20 Bs</p>
                 </div>
                 <br>
                 <div class="card-footer">
                     <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
+                        <a href="">Añadir a su compra</a>
                     </button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Hamburguesa</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://4.bp.blogspot.com/-aheuid9WAfY/UJbEfckPVjI/AAAAAAAAAZg/0bX7Z7Y5fp0/s1600/hamburguesa.jpg" alt="" class="img_ens" >
+                    <p>27 Bs, con porciones de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">
                     <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
+                        <a href="">Añadir a su compra</a>
                     </button>
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Hamburguesa Doble</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/OIP.vvwJ07VnzuiCvgM8ZydlJgHaFj?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
+                    <p>35 Bs, con porciones de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">
                     <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
+                        <a href="">Añadir a su compra</a>
                     </button>
                 </div>
             </div>

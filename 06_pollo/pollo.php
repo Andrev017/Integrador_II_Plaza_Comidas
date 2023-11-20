@@ -78,11 +78,11 @@
         <section class="section" >
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Cuarto Pollo</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://i.pinimg.com/736x/37/5a/2d/375a2d7ea9bce278383efa8c1400a351.jpg" alt="" class="img_ens" >
+                    <p>26 Bs, con porcion de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -93,11 +93,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Medio Pollo</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://image.freepik.com/foto-gratis/comida-pollo-frito-papas-fritas-pepitas_1339-112090.jpg" alt="" class="img_ens" >
+                    <p>45 Bs, con porcion de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -108,11 +108,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Solo Cuarto</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/R.8c10aecb1eef1a6381b5bc10d9df5ecb?rik=VoV%2bRJyGHZQQfw&riu=http%3a%2f%2fmilrecetas.net%2fwp-content%2fuploads%2f2016%2f08%2fPollo-frito-estilo-americano-4.jpg&ehk=UVuYoPzCP%2f%2f8KseCB83FGmrH87hkPv%2fj1J3Qg6kAl98%3d&risl=&pid=ImgRaw&r=0" alt="" class="img_ens" >
+                    <p>19 Bs, sin porciones</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -123,11 +123,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Pollo Rey</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://d.haberciniz.biz/news/2010879.jpg" alt="" class="img_ens" >
+                    <p>53 Bs, 4 presas, con refresco y porcion de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">
@@ -138,11 +138,11 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h1>Corte Argetino</h1>
+                    <h1>Porciones extras</h1>
                 </div>
                 <div class="card-body">
-                    <img src="#" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
+                    <img src="https://th.bing.com/th/id/OIP.31_60uNTyxJOjU_Qh9prZAHaFz?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
+                    <p>7 Bs, porciones de papas</p>
                 </div>
                 <br>
                 <div class="card-footer">

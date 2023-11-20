@@ -1,6 +1,5 @@
 <?php
     require '../DataBase/modelo.php';
-    require '../INCLUDES/navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,15 +7,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud</title>
-    <link rel="stylesheet" href="../CSS/estilos.css">
-    <link rel="stylesheet" href="../CSS/crud_clientes.css">
+
+    <link rel="stylesheet" href="../00_admin/css/crud_clientes.css">
+
+    <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
 </head>
 <body>
+    <header class="header" >       
+        <div class="logo">
+            <div class="bn">
+                <a href="../00_admin/index_admin.php">
+                    <img src="../img/logo_plaza.png" alt="Logo del Proyecto">
+                </a>
+                    
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">           
+                <li><a href="../00_admin/registro_restaurante.php">Restaurantes</a></li>
+                <li><a href="../00_admin/registro_menu.php">Menu</a></li>
+                <li><a href="../00_admin/crud_clientes.php">Registros</a></li>
+                <li><a href="#">Reporte de Ingrdientes</a></li>
+                <li><a href="#">Reporte de Ventas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <br><br>
-    <h1>
+    <h1 class="tituloh1" >
         Registro de los Usuarios
     </h1>
-    <br><br>
+    <br>
     <table class="tabala_crud">
         <tr>
             <th>ID</th>

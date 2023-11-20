@@ -58,7 +58,7 @@
             </div>
             <div class="card-body">
                 <img src="../img/el_gordito_icono.png" alt="">
-                <p>Todo tipo de Carnes</p>
+                <p>Lo que le gusta al Cochalo</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">
@@ -73,7 +73,7 @@
             </div>
             <div class="card-body">
                 <img src="../img/la_pecerita_icono.png" alt="">
-                <p>Las mejores pizzas</p>
+                <p>Gustos de pocos</p>
             </div>
             <div class="card-footer">
                 <button class="btn_1">

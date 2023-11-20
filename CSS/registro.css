@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../img/plaza.jpg");
+    background-image: url("https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-size: cover;
     background-color: gray;
     display: flex;
