@@ -1,8 +1,10 @@
 <?php
     require '../DataBase/modelo.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +15,32 @@
     <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
     <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
 </head>
+
 <body>
-    <header class="header" >       
+
+    <header class="header">
         <div class="logo">
             <div class="bn">
                 <a href="../00_admin/index_admin.php">
                     <img src="../img/logo_plaza.png" alt="Logo del Proyecto">
                 </a>
-                    
+
             </div>
         </div>
         <nav>
-            <ul class="nav-links">           
+            <ul class="nav-links">
                 <li><a href="../00_admin/registro_restaurante.php">Restaurantes</a></li>
                 <li><a href="../00_admin/registro_menu.php">Menu</a></li>
                 <li><a href="../00_admin/crud_clientes.php">Registros</a></li>
-                <li><a href="#">Reporte de Ingrdientes</a></li>
-                <li><a href="#">Reporte de Ventas</a></li>
+                <li><a href="../00_admin/reporte_ingredientes.php">Reporte de Ingrdientes</a></li>
+                <li><a href="../00_admin/reporte_ventas.php">Reporte de Ventas</a></li>
             </ul>
         </nav>
     </header>
 
 
     <br><br>
-    <h1 class="tituloh1" >
+    <h1 class="tituloh1">
         Registro de los Usuarios
     </h1>
     <br>
@@ -62,8 +66,8 @@
                 echo "<td>" . $row["apellido_usuario"] . "</td>";
                 echo "<td>" . $row["email_usuario"] . "</td>";
                 echo "<td>" . $row["contraseña_usuario"] . "</td>";
-                echo "<td><button  class='btn_eli_act' onclick='mostrarModalAct()'" . $row["id_usuario"] . "'>Actualizar</button> <button class='btn_eli' onclick='mostrarModal()'>" . $row["id_usuario"] . "'>Eliminar</button></td>";
-                echo "</tr>";                                                          
+                echo "<td><button class='btn_eli_act' onclick='mostrarModalAct(" . $row["id_usuario"] .")'>Actualizar</button> <button class='btn_eli' onclick='mostrarModal(" . $row["id_usuario"] . ")'>Eliminar</button></td>";
+                echo "</tr>";
             }
         } else {
             echo "No hay registros en la base de datos.";
@@ -71,12 +75,13 @@
 
         $conn->close();
         ?>
+
     </table>
     <br>
 
     <script>
         function mostrarModal() {
-        document.getElementById('miModal').style.display = 'block';
+            document.getElementById('miModal').style.display = 'block';
         }
 
         function cerrarModal() {
@@ -84,39 +89,16 @@
         }
 
         function eliminarDato() {
-            // Aquí puedes agregar la lógica para eliminar el dato
+            
             alert('Dato eliminado correctamente');
             cerrarModal();
-            
+
         }
     </script>
-            <?php
-                if (isset($_GET["id_usuario"])) {
-                    // Obtener el id_usuario de forma segura
-                    $id = $_GET["id_usuario"];
-                
-                    // Consulta preparada para eliminar el registro
-                    $sql = "DELETE FROM usuario WHERE ID = ?";
-                    $stmt = $conn->prepare($sql);
-                
-                    // Vincular parámetro
-                    $stmt->bind_param("i", $id);
-                
-                    // Ejecutar la consulta
-                    if ($stmt->execute()) {
-                        // Redirigir a la página de CRUD después de eliminar
-                        header("Location: ../View/crud_clientes"); 
-                        exit(); // Asegurar que el script se detenga después de redirigir
-                    } else {
-                        // Manejo de errores más robusto
-                        echo "Error al eliminar registro: " . $stmt->error;
-                    }
-                }
 
-            ?>
-    <button onclick='mostrarModal()' ></button>
-    
-            
+    <button onclick='mostrarModal()'></button>
+
+
     <div id="miModal" class="modal_crud">
         <div class="modal-contenido-crud">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -124,67 +106,66 @@
             <br><br>
             <p>¿Estás seguro de que quieres eliminar este usuario?</p>
             <br><br><br>
-            <button onclick="eliminarDato()" class="btn_eli_crud" >Eliminar</button>
+            <button onclick="eliminarDato()" class="btn_eli_crud">Eliminar</button>
         </div>
     </div>
-<!--p>-----------------------------------------------------------------------------------</!--p-->
-        <script>
-            function mostrarModalAct() {
+    <!--p>-----------------------------------------------------------------------------------</!--p-->
+    <script>
+        function mostrarModalAct() {
             document.getElementById('actualizarModal').style.display = 'block';
-            }
+        }
 
-            function cerrarModalAct() {
-                document.getElementById('actualizarModal').style.display = 'none';
-            }
+        function cerrarModalAct() {
+            document.getElementById('actualizarModal').style.display = 'none';
+        }
 
-            function actualizarDatos() {
-                alert('Datos actualizados correctamente');
-                cerrarModalAct();
-            }
-        </script>
-        <script>
-            const emailValido = email => {
+        function actualizarDatos() {
+            alert('Datos actualizados correctamente');
+            cerrarModalAct();
+        }
+    </script>
+        <!--p>-----------------------------------------------------------------------------------</!--p-->
+    <script>
+        const emailValido = email => {
             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function validar(f) {
+            var nn = f.nombre.value;
+
+            if (!emailValido(f.email.value)) {
+                alert("Por favor, escribe un correo electrónico válido");
+                f.email.focus();
+                return false;
             }
-            function validar(f){
-                var nn = f.nombre.value;
+            if (ok == false)
+                alert(msg);
+            return ok;
+        }
+    </script>
 
-                if (!emailValido(f.email.value)) {
-                    alert("Por favor, escribe un correo electrónico válido");
-                    f.email.focus();
-                    return false;
-                    }
-                    if(ok == false)
-                    alert(msg);
-                return ok;
-            }
-        </script>
+    <div id="actualizarModal" class="modal_crud">
+        <div class="modal-contenido-actu">
+            <span class="cerrar" onclick="cerrarModalAct()">&times;</span>
+            <h1>Actualizar Usuario</h1>
 
-        <div id="actualizarModal" class="modal_crud">
-            <div class="modal-contenido-actu">
-                <span class="cerrar" onclick="cerrarModalAct()">&times;</span>
-                <h1>Actualizar Registro</h1>
+            <form method="post" action="../00_admin/controllers/actualizar_crud.php">
 
-                <form method="post" action="../Controller/actualizar_clientes.php">
-                    <div class="form-control" >
-                        <input type="hidden" name="id" value="<?php echo $id_usuario; ?>">
+                <div class="form-control">
+                    <input type="text" name="id_usuario" placeholder="Id" required >
 
-                        <input type="text" name="nombre" required placeholder="Nombre" maxlength="100" minlength="5" value="<?php echo $nombre; ?>" >
-
-                        <input type="text" name="apellido" required placeholder="Apellido" maxlength="250" minlength="5" value="<?php echo $apellido; ?>" >
-
-                        <input type="text" name="email" required placeholder="Gmail" title="Debe contener @" value="<?php echo $email; ?>" >
-
-                        <input type="password" name="contraseña" required placeholder="Contraseña" maxlength="50" minlength="6" value="<?php echo $contraseña; ?>" >
-                    </div>
-
-                    <input type="submit" value="Actualizar" class="btn_eli_crud">
-                </form>
-
-                
-            </div>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="contraseña" placeholder="Contraseña" required>
+                </div>
+                <br><br>
+                    <input type="submit" value="Actualizar" class="btn_act">
+            </form>
         </div>
+    </div>
 
 
 </body>
+
 </html>

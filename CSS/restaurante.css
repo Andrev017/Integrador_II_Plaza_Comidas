@@ -115,6 +115,7 @@ body {
     display: flex;
     font-size: 28;
     background-color: #1d3557;
+    color: white;
 }
 
 /*---------------------------PARTE DE LAS CARTAS-----------------------------*/
@@ -150,7 +151,7 @@ body {
 .btn_1{
     font-weight: 700;
     padding: 8px 15px;
-    background: #eceff1;
+    background: #1d3557;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;

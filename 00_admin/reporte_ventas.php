@@ -1,11 +1,15 @@
+<?php
+    require '../00_admin/Data/modelo.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administración</title>
+    <title>Reportes</title>
 
-    <link rel="stylesheet" href="../00_admin/css/index_admin.css">
+    <link rel="stylesheet" href="../00_admin/css/report_ventas.css">
 
     <link rel="icon" href="../img/icono_plaza.png" type="image/x-icon">
     <link rel="shortcut icon" href="../img/icono_plaza.png" type="image/x-icon">
@@ -34,21 +38,41 @@
         </nav>
     </header>
 
-    <section class="content_1">
-        <div class="texto_content">
-            <h2>
-                Administración de la Plaza
 
-            </h2>
-            <P> Todos los cambios que se hagan estaran en la reponsabilidad de 
-                de las microempresas, si es que pasara errores.
-            </P>
-        </div>
-        <div  class="imge_1">
-            <img class="img_1" src="https://images.pexels.com/photos/3760089/pexels-photo-3760089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-        </div>
+    <table class="tabala_ventas" >
+        <tr>
+            <th>ID</th>
+            <th>Monto total</th>
+            <th>Fecha</th>
 
-    </section>
+
+        </tr>
+
+        <?php 
+
+        $sql = "SELECT * FROM venta";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr>";
+                echo "<td>" . $row["id_venta"] . "</td>";
+                echo "<td>" . $row["monto_total_venta"] . '<p>Bs</p>' . "</td>";
+                echo "<td>" . $row["fecha_venta"] . "</td>";
+                
+                echo "</tr>";                                                          
+            }
+        } else {
+            echo "No hay registros en la base de datos.";
+        }
+        $conn->close();
+        ?>
+    </table>
+
+    
+    <button class="btn_ventas" >
+        Generar Reporte
+    </button>
 
 </body>
 </html>

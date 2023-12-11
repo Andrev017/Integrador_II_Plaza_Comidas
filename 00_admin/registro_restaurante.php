@@ -30,8 +30,8 @@
                 <li><a href="../00_admin/registro_restaurante.php">Restaurantes</a></li>
                 <li><a href="../00_admin/registro_menu.php">Menu</a></li>
                 <li><a href="../00_admin/crud_clientes.php">Registros</a></li>
-                <li><a href="#">Reporte de Ingrdientes</a></li>
-                <li><a href="#">Reporte de Ventas</a></li>
+                <li><a href="../00_admin/reporte_ingredientes.php">Reporte de Ingrdientes</a></li>
+                <li><a href="../00_admin/reporte_ventas.php">Reporte de Ventas</a></li>
             </ul>
         </nav>
     </header>

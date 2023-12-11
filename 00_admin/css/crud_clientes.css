@@ -193,7 +193,7 @@ h3{
 
 .cerrar:hover,
 .cerrar:focus {
-    color: white;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -253,6 +253,10 @@ h3{
     width: 390px;
 
 }
+h1{
+    color: #1d3557;
+    font-size: 18px;
+}
 .form-control input {
     outline: none;
     background-color: transparent;
@@ -286,4 +290,17 @@ h3{
 
 .form-control input{
     font-size: 14px;
+}
+
+.btn_act{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: #1d3557;
+    color: white;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: transparent;
+    border-radius: 5px;
 }

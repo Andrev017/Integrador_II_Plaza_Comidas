@@ -77,79 +77,172 @@
 <!--p>----------------------------------------------------------------------------------------------------</!--p-->
         <section class="section" >
             <div class="card">
-                <div class="card-header">
-                    <h1>Cuarto Pollo</h1>
-                </div>
-                <div class="card-body">
-                    <img src="https://i.pinimg.com/736x/37/5a/2d/375a2d7ea9bce278383efa8c1400a351.jpg" alt="" class="img_ens" >
-                    <p>26 Bs, con porcion de papas</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 27;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='https://i.pinimg.com/736x/37/5a/2d/375a2d7ea9bce278383efa8c1400a351.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+
             <div class="card">
-                <div class="card-header">
-                    <h1>Medio Pollo</h1>
-                </div>
-                <div class="card-body">
-                    <img src="https://image.freepik.com/foto-gratis/comida-pollo-frito-papas-fritas-pepitas_1339-112090.jpg" alt="" class="img_ens" >
-                    <p>45 Bs, con porcion de papas</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 28;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='https://image.freepik.com/foto-gratis/comida-pollo-frito-papas-fritas-pepitas_1339-112090.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+
             <div class="card">
-                <div class="card-header">
-                    <h1>Solo Cuarto</h1>
-                </div>
-                <div class="card-body">
-                    <img src="https://th.bing.com/th/id/R.8c10aecb1eef1a6381b5bc10d9df5ecb?rik=VoV%2bRJyGHZQQfw&riu=http%3a%2f%2fmilrecetas.net%2fwp-content%2fuploads%2f2016%2f08%2fPollo-frito-estilo-americano-4.jpg&ehk=UVuYoPzCP%2f%2f8KseCB83FGmrH87hkPv%2fj1J3Qg6kAl98%3d&risl=&pid=ImgRaw&r=0" alt="" class="img_ens" >
-                    <p>19 Bs, sin porciones</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 29;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='https://th.bing.com/th/id/R.8c10aecb1eef1a6381b5bc10d9df5ecb?rik=VoV%2bRJyGHZQQfw&riu=http%3a%2f%2fmilrecetas.net%2fwp-content%2fuploads%2f2016%2f08%2fPollo-frito-estilo-americano-4.jpg&ehk=UVuYoPzCP%2f%2f8KseCB83FGmrH87hkPv%2fj1J3Qg6kAl98%3d&risl=&pid=ImgRaw&r=0' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+
             <div class="card">
-                <div class="card-header">
-                    <h1>Pollo Rey</h1>
-                </div>
-                <div class="card-body">
-                    <img src="https://d.haberciniz.biz/news/2010879.jpg" alt="" class="img_ens" >
-                    <p>53 Bs, 4 presas, con refresco y porcion de papas</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 30;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='https://d.haberciniz.biz/news/2010879.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+
             <div class="card">
-                <div class="card-header">
-                    <h1>Porciones extras</h1>
-                </div>
-                <div class="card-body">
-                    <img src="https://th.bing.com/th/id/OIP.31_60uNTyxJOjU_Qh9prZAHaFz?rs=1&pid=ImgDetMain" alt="" class="img_ens" >
-                    <p>7 Bs, porciones de papas</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="#">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 31;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='https://th.bing.com/th/id/OIP.31_60uNTyxJOjU_Qh9prZAHaFz?rs=1&pid=ImgDetMain' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
         </section>
 

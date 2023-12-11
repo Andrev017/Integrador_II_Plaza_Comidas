@@ -1,3 +1,7 @@
+<?php
+    require '../00_admin/Data/modelo.php';
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -76,80 +80,162 @@
     </div>
 <!--p>----------------------------------------------------------------------------------------------------</!--p-->
         <section class="section" >
+
             <div class="card">
-                <div class="card-header">
-                    <h1>Corte Argetino</h1>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/menu1d.jpg" alt="" class="img_ens" >
-                    <p>55 Bs, con dos porciones a elección</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php
+                $id_menu = 1;
+
+                $sql = "SELECT * FROM menu WHERE id_menu = $id_menu";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<div class='card-header'>" . "<h1>" . $row["nombre_menu"] . "</h1>" . "</div>";
+
+                        echo "<div class='card-body'>" . "<img src='../img/ensartados/menu1d.jpg' alt='' class='img_ens' >". "<br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                        echo "<br>";
+                        echo "<div class='card-footer'>" . "<button class='btn_1'>" ."<a href='#'>Añadir a su compra</a>" . "</button>" . "</div>";
+                                                        
+                    }
+                } else {
+                    echo "No hay registros en la base de datos.";
+                }
+                $conn->close();
+            ?>
             </div>
+
             <div class="card">
-                <div class="card-header">
-                    <h3>Tira de Lomo</h3>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/menu2d.jpg" alt="" class="img_ens" >
-                    <p>45 Bs, con dos porciones a elección</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu2 = 2;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu2);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='../img/ensartados/menu2d.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+            
             <div class="card">
-                <div class="card-header">
-                    <h3>Bife Chorizo</h3>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/menu3d.jpg" alt="" class="img_ens" >
-                    <p>50 Bs, con dos porciones a elección</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 3;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='../img/ensartados/menu3d.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
+
             <div class="card">
-                <div class="card-header">
-                    <h3>Mix Churasco</h3>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/menu4.jpg" alt="" class="img_ens" >
-                    <p>90 bs, , con pollo, chorizo, brochetas y sus porciones</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 10;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='../img/ensartados/menu4.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
+
             <div class="card">
-                <div class="card-header">
-                    <h3>Pacú a la Parrilla</h3>
-                </div>
-                <div class="card-body">
-                    <img src="../img/ensartados/menu5d.jpg" alt="" class="img_ens" >
-                    <p>25 Bs, solo los dias miercoles.</p>
-                </div>
-                <br>
-                <div class="card-footer">
-                    <button class="btn_1">
-                        <a href="../01_ensartados.php/ensartados.php">Añadir a su compra</a>
-                    </button>
-                </div>
+            <?php              
+                $id_menu = 11;
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "plaza_de_comidas";               
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                $sql = "SELECT * FROM menu WHERE id_menu = ?";
+                $stmt = $conn->prepare($sql);
+                $stmt->bind_param("i", $id_menu);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($result) {
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<div class='card-header'><h1>" . $row["nombre_menu"] . "</h1></div>";
+                
+                            echo "<div class='card-body'><img src='../img/ensartados/menu5d.jpg' alt='' class='img_ens'><br>" . $row["precio_menu"] . 'Bs, ' . $row["descripcion_menu"] . "</div>";
+                            echo "<br>";
+                            echo "<div class='card-footer'><button class='btn_1'><a href='#'>Añadir a su compra</a></button></div>";
+                        }
+                    } else {
+                        echo "No hay registros en la base de datos.";
+                    }
+                } else {
+                    echo "Error en la consulta: " . $conn->error;
+                }
+                $conn->close();           
+            ?>
             </div>
 
         </section>
