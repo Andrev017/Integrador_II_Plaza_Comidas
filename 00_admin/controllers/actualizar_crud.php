@@ -1,6 +1,7 @@
 <?php
-require '../Data/modelo.php';
+require './00_admin/Data/modelo.php';
 
+echo 'holasasa';
 
 $id_usuario = $nombre = $apellido = $email = $contraseña = "";
 

@@ -28,7 +28,7 @@
         </div>
 
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links">5
                     <!--li><a href="menu.php">Menú</a></!--li-->
                     <li><a href="../View/restaurantes.php">Restaurantes</a></li>
                     <li><a href="../View/ubicacion.php">Ubicación</a></li>

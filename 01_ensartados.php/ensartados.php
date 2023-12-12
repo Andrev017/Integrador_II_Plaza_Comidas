@@ -71,13 +71,21 @@
     </header>
     <!--p>----------------------------------------------------------------------------------------------------</!--p-->
     
-    <div>
         <div class="nom_inicio">
-                <h1>
+                <h1 class="hu" >
                     Ensartados  
                 </h1>
         </div>
-    </div>
+        <style>
+            .nom_inicio{
+                font-size: 28pt;
+                color: #ffff;
+            }
+            .hu{
+                font-size: 30px;
+            }
+        </style>
+
 <!--p>----------------------------------------------------------------------------------------------------</!--p-->
         <section class="section" >
 
@@ -136,6 +144,14 @@
                 $conn->close();           
             ?>
             </div>
+            <style>
+                .btn_1 :hover{
+                background-color: #1d3557;
+                color: #ffff;
+                transform: scale(1.2);
+                font-size: 19px;
+                }
+            </style>
 
             
             <div class="card">

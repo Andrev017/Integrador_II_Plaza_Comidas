@@ -1,5 +1,5 @@
 <?php
-    require '../DataBase/modelo.php';
+require '../DataBase/modelo.php';
 ?>
 
 <!DOCTYPE html>
@@ -32,8 +32,8 @@
                 <li><a href="../00_admin/registro_restaurante.php">Restaurantes</a></li>
                 <li><a href="../00_admin/registro_menu.php">Menu</a></li>
                 <li><a href="../00_admin/crud_clientes.php">Registros</a></li>
-                <li><a href="../00_admin/reporte_ingredientes.php">Reporte de Ingrdientes</a></li>
-                <li><a href="../00_admin/reporte_ventas.php">Reporte de Ventas</a></li>
+                <li><a href="../00_admin/reporte_ingredientes.php">Reportes</a></li>
+                <!--li><a href="../00_admin/reporte_ventas.php">Reporte de Ventas</a></!--li-->
             </ul>
         </nav>
     </header>
@@ -44,39 +44,97 @@
         Registro de los Usuarios
     </h1>
     <br>
-    <table class="tabala_crud">
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
-            <th>Contraseña</th>
-            <th>Botones</th>
-        </tr>
 
-        <?php
-        $sql = "SELECT * FROM usuario";
-        $result = $conn->query($sql);
+    <section class="contenedores" >
+        <form action="./btn_reporte_clientes.php" method="post">
 
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                echo "<tr>";
-                echo "<td>" . $row["id_usuario"] . "</td>";
-                echo "<td>" . $row["nombre_usuario"] . "</td>";
-                echo "<td>" . $row["apellido_usuario"] . "</td>";
-                echo "<td>" . $row["email_usuario"] . "</td>";
-                echo "<td>" . $row["contraseña_usuario"] . "</td>";
-                echo "<td><button class='btn_eli_act' onclick='mostrarModalAct(" . $row["id_usuario"] .")'>Actualizar</button> <button class='btn_eli' onclick='mostrarModal(" . $row["id_usuario"] . ")'>Eliminar</button></td>";
-                echo "</tr>";
+            <input type="submit" value="Generar Reporte" />
+        </form>
+
+        <style>
+            .contenedores {
+                display: flex;
+                flex-direction: column;
+
+                & form>input {
+                    position: absolute;
+                    top: 5.5em;
+                    right: 22em;
+                    border-radius: .3em;
+                    border: none;
+                    padding: .2em 2em;
+                    cursor: pointer;
+                    background-color: #1d3557;
+                    color: #fff;
+                }
             }
-        } else {
-            echo "No hay registros en la base de datos.";
-        }
+        </style>
+        <table class="tabala_crud">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Contraseña</th>
+                <th>Botones</th>
+            </tr>
 
-        $conn->close();
-        ?>
+            <?php
+            $sql = "SELECT * FROM usuario";
+            $result = $conn->query($sql);
 
-    </table>
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>" . $row["id_usuario"] . "</td>";
+                    echo "<td>" . $row["nombre_usuario"] . "</td>";
+                    echo "<td>" . $row["apellido_usuario"] . "</td>";
+                    echo "<td>" . $row["email_usuario"] . "</td>";
+                    echo "<td>" . $row["contraseña_usuario"] . "</td>";
+                    echo "<td><button class='btn_act' onclick='mostrarModalAct(" . $row["id_usuario"] .")'>  <img src='./Data/editar_logo.png' alt='' class='img_edit'>  </button> <button class='btn_eli' onclick='mostrarModal(" . $row["id_usuario"] . ")'>  <img src='./Data/basura_logo.png' alt='' class='img_edit' >  </button></td>";
+
+                    echo "</tr>";
+                }
+            } else {
+                echo "No hay registros en la base de datos.";
+            }
+
+            $conn->close();
+            ?>
+
+        </table>
+    </section>
+    <style>
+        .btn_act{
+                cursor: pointer;
+                display: inline-block;
+                width: 40%;
+                background-color: transparent;
+                padding: 10px;
+                font-family: inherit;
+                border: transparent;
+                border-radius: 5px;
+            }
+            .img_edit{
+                width: 100%;
+                height: 100%;
+            }
+            .btn_eli{
+                cursor: pointer;
+                display: inline-block;
+                width: 40%;
+                background-color: transparent;
+                padding: 10px;
+                font-family: inherit;
+                border: transparent;
+                border-radius: 5px;
+            }
+            .img_edit{
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+
     <br>
 
     <script>
@@ -89,7 +147,7 @@
         }
 
         function eliminarDato() {
-            
+
             alert('Dato eliminado correctamente');
             cerrarModal();
 
@@ -124,7 +182,7 @@
             cerrarModalAct();
         }
     </script>
-        <!--p>-----------------------------------------------------------------------------------</!--p-->
+    <!--p>-----------------------------------------------------------------------------------</!--p-->
     <script>
         const emailValido = email => {
             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -152,7 +210,7 @@
             <form method="post" action="../00_admin/controllers/actualizar_crud.php">
 
                 <div class="form-control">
-                    <input type="text" name="id_usuario" placeholder="Id" required >
+                    <input type="text" name="id_usuario" placeholder="Id" required>
 
                     <input type="text" name="nombre" placeholder="Nombre" required>
                     <input type="text" name="apellido" placeholder="Apellido" required>
@@ -160,7 +218,7 @@
                     <input type="password" name="contraseña" placeholder="Contraseña" required>
                 </div>
                 <br><br>
-                    <input type="submit" value="Actualizar" class="btn_act">
+                <input type="submit" value="Actualizar" class="btn_act">
             </form>
         </div>
     </div>

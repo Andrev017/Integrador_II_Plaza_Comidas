@@ -211,6 +211,15 @@
             ?>
             </div>
 
+            <style>
+                .btn_1 :hover{
+                background-color: #1d3557;
+                color: #ffff;
+                transform: scale(1.2);
+                font-size: 19px;
+            }
+            </style>
+
 
             <div class="card">
             <?php              

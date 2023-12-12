@@ -14,12 +14,35 @@
 <body>
     <br><br>
     <div class="titulo-kk" >
-        <h1  >
+        <h1 class="tit" >
             TODOS NUESTROS RESTAURANTES
         </h1>
     </div>
+    <style>
+        .titulo-kk{
+            height: 70px;
+            font-size: 34;
+            background-color: #1d3557;
+            color: white;
+        }
+        .tit{
+            position: relative;
+            top: 25px;
+            font-size: 30;
+        }
+        .section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 30px;
+            position: relative;
+            top: 10px;
+            left: 45px;
+
+        }
+
+    </style>
     
-    <br><br>
     <section class="section">
 
         <div class="card">
@@ -36,6 +59,30 @@
                 </button>
             </div>
         </div>
+
+
+        <style>
+            .btn_1{
+                font-weight: 700;
+                padding: 8px 20px;
+                background: #1d3557;
+                border: none;
+                border-radius: 50px;
+                transition: all 0.3s ease 0s;
+                text-align: center;
+
+            }
+            .btn_1 a{
+                color: #ccc;
+                text-decoration: none;
+            }
+            .btn_1 :hover{
+                background-color: #1d3557;
+                color: #ffff;
+                transform: scale(1.2);
+                font-size: 19px;
+            }
+        </style>
 
         <div class="card">
             <div class="card-header">

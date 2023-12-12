@@ -137,7 +137,7 @@ tr:nth-child(even) {
 .btn_ventas{
     cursor: pointer;
     display: inline-block;
-    width: 100%;
+    width: 80%;
     background: #1d3557;
     color: white;
     padding: 15px;
